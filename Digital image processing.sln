@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Digital image processing", "Digital image processing\Digital image processing.vcxproj", "{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Debug|x64.ActiveCfg = Debug|x64
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Debug|x64.Build.0 = Debug|x64
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Debug|x86.Build.0 = Debug|Win32
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Release|x64.ActiveCfg = Release|x64
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Release|x64.Build.0 = Release|x64
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Release|x86.ActiveCfg = Release|Win32
+		{C9759474-4C80-4B82-8A49-CC7FD5ECA2BC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A1E91BE-148F-4DF6-B16D-E1BE47FB715F}
+	EndGlobalSection
+EndGlobal
