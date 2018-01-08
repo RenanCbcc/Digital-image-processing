@@ -70,8 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(IncludePath)</IncludePath>
-    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\boost_1_65_1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\boost_1_65_1\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\opencv\build\include;$(IncludePath)</IncludePath>
@@ -125,11 +125,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="Huffman.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Filter.h" />
+    <ClInclude Include="BitstreamGeneric.hpp" />
+    <ClInclude Include="Coding.hpp" />
+    <ClInclude Include="Dct.hpp" />
+    <ClInclude Include="Huffman.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Huffman.hpp" />
+    <ClInclude Include="JpegSegments.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

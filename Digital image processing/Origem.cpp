@@ -15,7 +15,7 @@ void histogram(const cv::Mat &);
 void equalization(const cv::Mat &);
 int computeOutput(int, int, int, int, int);
 
-int main() {
+int nain() {
 	cv::Mat origin;
 	origin = cv::imread("belem.jpg");
 
@@ -27,6 +27,7 @@ int main() {
 	//getPixel(origin, 100, 100);
 	//rgbTOgray(origin);
 	//rgbTOblue(origin);
+	//rgbTOhsv(origin);
 	//histogram(origin);
 	//negative(origin);
 	//contrast(origin);//r1 = 70 s1 = 0 r2 = 140 s2 = 255
@@ -170,6 +171,7 @@ void histogram(const cv::Mat &input)
 void 
 equalization(const cv::Mat &)
 {
+
 }
 
 int computeOutput(int x, int r1, int s1, int r2, int s2)
@@ -271,15 +273,19 @@ void rgbTOhsv(const cv::Mat & input) {
 	std::vector< cv::Mat> channel;
 	cv::split(input, channel);
 
-	cv::Mat b = channel[0], g = channel[1], r = channel[2];
-
-
+	/* RGB and HSV values are in the range from 0 to 1.0 */
+	/*
+	const float noHue = -1.0;
+	cv::Mat r = channel[0], g = channel[1], b = channel[2];
 	cv::merge(channel, output);
 
-	/* RGB and HSV values are in the range from 0 to 1.0 */
-	const float noHue = -1.0;
-
+	for (int i = 0; i < channel.size(); i++) {
+		
 	
+	}
+	
+	*/
+	cvtColor(input, output, CV_RGB2HSV);
 	cv::namedWindow("Original Image", cv::WINDOW_AUTOSIZE);
 	cv::imshow("Original Image", input);
 
